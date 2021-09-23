@@ -11,7 +11,7 @@ const ServerPage: NextPage<ServerPageProps> = ({
   const now = (new Date()).toString()
   return (
     <div>
-      <h1>Static Rendering Example</h1>
+      <h1>Server-Side Rendering Example</h1>
       <h2>This is generated in the client: {now}</h2>
       <h2>{message}</h2>
     </div>
