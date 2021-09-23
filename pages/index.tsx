@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import { GetServerSideProps } from 'next'
 
@@ -17,6 +18,12 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+
+        <p className={styles.description}>
+          <Link href="/static"><a>Static Rendering Example</a></Link>
+          <br />
+          <Link href="/server"><a>Server-Side Rendering Example</a></Link>
+        </p>
 
         <p className={styles.description}>
           Get started by editing{' '}
